@@ -2,6 +2,8 @@
 
 namespace Cxcsz\FilamentUeditor;
 
+use Cxcsz\FilamentUeditor\Commands\FilamentUeditorCommand;
+use Cxcsz\FilamentUeditor\Testing\TestsFilamentUeditor;
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
@@ -13,8 +15,6 @@ use Livewire\Features\SupportTesting\Testable;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Cxcsz\FilamentUeditor\Commands\FilamentUeditorCommand;
-use Cxcsz\FilamentUeditor\Testing\TestsFilamentUeditor;
 
 class FilamentUeditorServiceProvider extends PackageServiceProvider
 {
@@ -99,11 +99,11 @@ class FilamentUeditorServiceProvider extends PackageServiceProvider
      */
     protected function getAssets(): array
     {
-//        return [
-//            // AlpineComponent::make('filament-ueditor', __DIR__ . '/../resources/dist/components/filament-ueditor.js'),
-//            Css::make('filament-ueditor-styles', __DIR__ . '/../resources/dist/filament-ueditor.css'),
-//            Js::make('filament-ueditor-scripts', __DIR__ . '/../resources/dist/filament-ueditor.js'),
-//        ];
+        //        return [
+        //            // AlpineComponent::make('filament-ueditor', __DIR__ . '/../resources/dist/components/filament-ueditor.js'),
+        //            Css::make('filament-ueditor-styles', __DIR__ . '/../resources/dist/filament-ueditor.css'),
+        //            Js::make('filament-ueditor-scripts', __DIR__ . '/../resources/dist/filament-ueditor.js'),
+        //        ];
         return [];
     }
 
